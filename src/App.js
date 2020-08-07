@@ -2,19 +2,40 @@ import React from 'react';
 import logo from './logo.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './components/layouts/Navbar';
+import Footer from './components/layouts/Footer';
+// React Router Import
+import { Switch, Route } from 'react-router-dom';
+// Import Pages for React Router
+import Home from './components/pages/Home';
+import Layout from './components/pages/Layout';
+import Locations from './components/pages/Locations';
+import Preparation from './components/pages/Preparation';
+import NotFoundPage from './components/pages/NotFoundPage';
 
 function App() {
   return (
     <div>
       <Navbar /> 
-      <br />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      <br />
+      <Switch>
+        <Route exact path="/" component={Home}/>
+        <Route path="/layout" component={Layout}/>
+        <Route path="/locations" component={Locations}/>
+        <Route path="/preparation" component={Preparation}/>
+        <Route component={NotFoundPage}/>
+      </Switch>
       <Footer />
     </div>
   );
 }
 
 export default App;
+
+// notes:
+
+// Using react router. run command npm install react-router-dom
+// remember react router is going to help route between the components
+
+// <Route exact path="/" component={Home}/> using exact will make it the default page.
+
+// not giving <Route component={NotFoundPage}/> a path will make it to where if it has the wrong url if will automatically go to the NotFoundPage route.

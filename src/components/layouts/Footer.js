@@ -81,3 +81,4 @@ const FooterContainer = styled.footer`
 
 // 1 rem is = to 16px
 
+// &copy;{new Date().getFullYear()} give you the copyright symbol as well as the current year.
