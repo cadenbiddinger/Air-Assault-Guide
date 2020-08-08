@@ -12,6 +12,7 @@ import Layout from './components/pages/Layout';
 import Locations from './components/pages/Locations';
 import Preparation from './components/pages/Preparation';
 import NotFoundPage from './components/pages/NotFoundPage';
+import Details from './components/pages/Details';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/layout" component={Layout}/>
         <Route path="/locations" component={Locations}/>
         <Route path="/preparation" component={Preparation}/>
+        <Route path="/details" component={Details} />
         <Route component={NotFoundPage}/>
       </Switch>
       <Footer />
