@@ -9,7 +9,7 @@ function Footer() {
           <div className="row">
             {/* Column 1 */}
             <div className="col-md-3 col-sm-6">
-              <h4>Contact School</h4>
+            <h4 style= {{ color: "#ffcc01"}}>Contact School</h4>
               <ul className="list-unstyled">
                 <li>6883 Air Assualt St.</li>
                 <li>Fort Campbell, KY 42223</li>
@@ -19,7 +19,7 @@ function Footer() {
             </div>
             {/* Column 2 */}
             <div className="col-md-3 col-sm-6">
-              <h4>Community and Events</h4>
+              <h4 style= {{ color: "#ffcc01"}}>Community and Events</h4>
               <ul className="list-unstyled">
                 <li><a href="/https://www.goarmy.com/events.html">Army Events</a></li>
                 <li><a href="/https://www.goarmy.com/parents.html">Parents and Family</a></li>
@@ -28,7 +28,7 @@ function Footer() {
             </div>
             {/* Column 3 */}
             <div className="col-md-3 col-sm-6">
-              <h4>Utilities</h4>
+              <h4 style= {{ color: "#ffcc01"}}>Utilities</h4>
               <ul className="list-unstyled">
                 <li><a href="/https://www.goarmy.com/downloads.html">Downloads</a></li>
                 <li><a href="/https://www.goarmy.com/careers-and-jobs/help-choosing-a-career-job/army-career-explorer.html">Army Career Explorer</a></li>
@@ -52,7 +52,7 @@ export default Footer;
 
 const FooterContainer = styled.footer`
   .footer-middle {
-    background: var(--mainDark);
+    background: var(--mainGrey);
     padding-top: 3rem;
     color: var(--mainWhite);
   }
@@ -62,11 +62,15 @@ const FooterContainer = styled.footer`
   }
 
   ul li a {
-    color: var(--mainGrey);
+    color: var(--mainWhite);
   }
 
   ul li a:hover {
-    color: var(--mainLightGrey)
+    color: var(--mainYellow)
+  }
+
+  p {
+    color: #6c757d
   }
 `;
 

@@ -5,19 +5,19 @@ import Info from '../Info';
 class Locations extends Component {
   render() {
     return (
-
-      <div className="container">
-      <div className="row mt-5">
-      <InfoConsumer>
-        {value => {
-          return value.info.map(item => {
-            return <Info key={item.id} item={item} />;
-          })
-        }}
-      </InfoConsumer>
+      <div style={styles.contentStyles}>
+        <div className="container">
+          <div className="row mt-5">
+            <InfoConsumer>
+              {value => {
+                return value.info.map(item => {
+                  return <Info key={item.id} item={item} />;
+                })
+              }}
+            </InfoConsumer>
+          </div>
+        </div>
       </div>
-      </div>
-
 
 
 
@@ -27,3 +27,12 @@ class Locations extends Component {
 }
 
 export default Locations;
+
+
+const styles = {
+  contentStyles: {
+    color: '#000000',
+    backgroundColor: '#fff',
+    marginBottom: '0'
+  }
+}

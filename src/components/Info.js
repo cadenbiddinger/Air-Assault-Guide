@@ -24,6 +24,7 @@ const {
                 <h5 className="card-title">{headerSubTitle}</h5>
                 <p className="card-text">{headerText}</p>
                 <Link
+                  style={styles.infoStyle}
                   onClick={() => value.handleDetail(id)}
                   to="/details"
                   className="btn btn-outline-primary text-uppercase"
@@ -41,6 +42,14 @@ const {
 
 export default Info;
 
+const styles = {
+  infoStyle: {
+    backgroundColor: '#ffcc01',
+    color: '#000000',
+    border: 'none'
+  }, 
+  
+}
 
 
 // pulling all of this information from the data.js file

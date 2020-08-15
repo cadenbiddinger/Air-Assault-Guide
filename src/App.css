@@ -1,9 +1,10 @@
 :root {
-  --mainDark: #343a40;
-  --mainGrey: rgba(109, 109, 109);
+  --mainDark: #000000;
+  /* --mainGrey: rgba(109, 109, 109); */
+  --mainGrey: #343a40;
   --mainLightGrey: rgba(172, 172, 172);
   --mainWhite: #fff;
-  --mainBlue: #007bff;
+  --mainYellow: #ffcc01; 
 }
 
 .navbar-toggler:focus {
@@ -13,3 +14,9 @@
 .navbar-toggler {
   border: none;
 }
+
+
+/* goarmy.com colors */
+/* yellow #ffcc01 */
+/* main white #fff */
+/* background colors gray-dark #343a40 , gray #6c757d, black #000000*/
