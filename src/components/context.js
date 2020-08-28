@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { placeInfo, reviews, detailInfo, news } from '../data'
+import { placeInfo, reviews, detailInfo, } from '../data'
 
 
 const InfoContext = React.createContext();
@@ -13,7 +13,7 @@ class InfoProvider extends Component {
     info: placeInfo,
     reviews: reviews,
     detailInfo: detailInfo,
-    new: news
+    // new: news
   };
 
   getItem = id => {
@@ -40,7 +40,7 @@ class InfoProvider extends Component {
         headerSubTitle: this.state.headerSubTitle,
         headerText: this.state.headerText,
         detailInfo: this.state.detailInfo,
-        news: this.state.news,
+        // news: this.state.news,
         name: this.state.name,
         avatar: this.state.avatar,
         comment: this.state.comment,

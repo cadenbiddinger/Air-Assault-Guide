@@ -52,7 +52,7 @@ export default Footer;
 
 const FooterContainer = styled.footer`
   .footer-middle {
-    background: var(--mainGrey);
+    background: var(--mainDark);
     padding-top: 3rem;
     color: var(--mainWhite);
   }
