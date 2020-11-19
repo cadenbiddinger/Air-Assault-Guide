@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { placeInfo, reviews, detailInfo, } from '../data'
 
-
 const InfoContext = React.createContext();
 
 // Provider provides data
