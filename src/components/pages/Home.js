@@ -10,7 +10,8 @@ class Home extends Component {
       <div>
           <Carousel>
             <Carousel.Item interval={1000}>
-              <img
+              <img 
+                height={550}
                 className="d-block w-100"
                 src="/images/carousel1.jpg"
                 alt="First slide"
@@ -22,6 +23,7 @@ class Home extends Component {
             </Carousel.Item>
             <Carousel.Item interval={500}>
               <img
+                height={550}
                 className="d-block w-100"
                 src="/images/carousel2.jpg"
                 alt="Third slide"
@@ -33,6 +35,7 @@ class Home extends Component {
             </Carousel.Item>
             <Carousel.Item>
               <img
+                height={550}
                 className="d-block w-100"
                 src="/images/carousel3.jpg"
                 alt="Third slide"
@@ -43,6 +46,9 @@ class Home extends Component {
               </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
+        <div>
+          <h1>test</h1>
+        </div>
       </div>
     )
   }
@@ -55,5 +61,5 @@ const styles = {
     color: '#000000',
     backgroundColor: '#fff',
     marginBottom: '0'
-  }
+  },
 }
