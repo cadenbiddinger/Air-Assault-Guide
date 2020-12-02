@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import Carousel from 'react-bootstrap/Carousel'
+import React, { Component } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
 
 
 
@@ -46,8 +47,14 @@ class Home extends Component {
               </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
-        <div>
-          <h1>test</h1>
+        <div class="row">
+          <div style={styles.column} xs={6} md={4}>
+            <Image src="/images/armyseal.jpg" rounded />
+          </div>
+          <div style={styles.column} class="column">
+            <h2>Background Of Air Assault School</h2>
+            <p>Air Assualt school is meant to train and qualify soldiers to conduct airmobile and air assault operations in an aircraft. This includes rappeling, sling load operations and much more. The course itself is 10 days and has a large number of tasks that need to be checked off in order to graduate. </p>
+          </div>
         </div>
       </div>
     )
@@ -61,5 +68,10 @@ const styles = {
     color: '#000000',
     backgroundColor: '#fff',
     marginBottom: '0'
+  },
+  column: {
+    float: 'left',
+    width: '50%',
+    padding: '20px'
   },
 }
